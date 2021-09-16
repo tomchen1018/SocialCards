@@ -91,7 +91,7 @@ const Pages = (props: PagesProps) => {
   return (
     <ul className="users-pagination">
 
-      <PageButton page={initPage} pageClass={disableFrontClass} text="First Page" />
+      <PageButton page={initPage} pageClass={disableFrontClass} text="First" />
       <PageButton page={currentPage - 1} pageClass={disableFrontClass} text="Previous" />
 
       {pagination.pages.map((page, index) =>
@@ -104,7 +104,7 @@ const Pages = (props: PagesProps) => {
       )}
 
       <PageButton page={currentPage + 1} pageClass={disableEndClass} text="Next" />
-      <PageButton page={totalPages} pageClass={disableEndClass} text="Last Page" />
+      <PageButton page={totalPages} pageClass={disableEndClass} text="Last" />
 
     </ul>
   )

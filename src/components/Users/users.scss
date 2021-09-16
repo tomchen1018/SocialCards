@@ -1,26 +1,22 @@
 .users-container{
-  width: 1200px;
   margin: auto;
-  
-  @media only screen and (max-width: 1280px){
-    width:auto;
-    padding-left: 24px;
-  }
 }
 
 .users-content{
-  max-width: 990px;
-  display: inline-block;
+  display: flex;
   margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
 
   @media only screen and (max-width: 1280px){
     width:320px;
-    display: block;
+    flex-direction: column;
   }
 }
 
 .users-actions{
   position: fixed;
+  right: 0;
   bottom: 100px;
   width: 200px;
   display: inline-block;
@@ -36,8 +32,9 @@
     display: block;
     padding: 12px 24px;
     background: linear-gradient(135deg, #F395BA 0%, #FED182 100%);
-    border: 1px solid #aaa;
+    border: none;
     border-radius: 4px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;

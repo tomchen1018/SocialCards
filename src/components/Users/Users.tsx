@@ -70,7 +70,7 @@ const Users = (props: UsersProps) => {
         {
           pageOfUsers.map((user: UserProfileProps) => {
             return (
-              <div onClick={() => openUserProfileForm(user)} key={user.id}>
+              <div onClick={() => openUserProfileForm(user)} key={user.id} className='user-profile'>
                 <UserProfile {...user} />
               </div>
             )

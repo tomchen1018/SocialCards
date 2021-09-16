@@ -29,9 +29,7 @@ const UserProfile = (props: UserProfileProps) => {
   const baseClass = 'user-profile';
 
   return (
-    <div className={baseClass}>
-
-
+    <>
       <div className={`${baseClass}-avatar`}>
         <img src={avatarUrl} />
       </div>
@@ -78,7 +76,7 @@ const UserProfile = (props: UserProfileProps) => {
 
       </div>
 
-    </div>
+    </>
   )
 }
 
