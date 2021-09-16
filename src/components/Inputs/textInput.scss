@@ -1,0 +1,15 @@
+.text-input{
+  margin: 24px auto 0;
+
+  label{
+    width: 20%;
+    display: inline-block;
+    padding-right: 24px;
+    text-align: right;
+  }
+
+  input{
+    width: 60%;
+    display: inline-block;
+  }
+}
