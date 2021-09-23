@@ -13,7 +13,7 @@ const Home = (props: HomeProps) => {
     return state;
   });
 
-  const handleupdateUser = (data: any) => {
+  const handleUpdateUser = (data: any) => {
     dispatch(updateUser(data));
   }
 
@@ -25,7 +25,7 @@ const Home = (props: HomeProps) => {
     dispatch(getUsers());
   }, [])
 
-  return <Users users={users.data} updateUser={handleupdateUser} addUser={handleAddUser} />
+  return <Users users={users.data} updateUser={handleUpdateUser} addUser={handleAddUser} />
 }
 
 export default Home;
